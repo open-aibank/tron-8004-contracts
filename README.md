@@ -34,11 +34,23 @@ The project consists of three main registry contracts:
 3. **Validate**: The agent requests validation for a task in `ValidationRegistry`; a validator provider (e.g., a TEE) submits the result.
 4. **Interact & Feedback**: Clients interact with the agent and provide feedback in `ReputationRegistry`.
 
+## Deployed Addresses (TRON Mainnet)
+
+- `IdentityRegistry`: `[]`
+- `ReputationRegistry`: `[]`
+- `ValidationRegistry`: `[]`
+
 ## Deployed Addresses (Nile Testnet)
 
 - `IdentityRegistry`: `[TRLTghbBbxEmB2BojVfk5EugUrTARSkeU4]`
 - `ReputationRegistry`: `[TPXCSyfNi5G2UTQMXdr8PTWS2RXp3tPbU7]`
 - `ValidationRegistry`: `[TTtRQ7csbUaWbFaJim5Lxp4RkkWiaj2dE3]`
+
+## Deployed Addresses (Shasta Testnet)
+
+- `IdentityRegistry`: `[TE5R4hVouK9DB8xDQRh2WzfCQHrwaK7iM2]`
+- `ReputationRegistry`: `[TDAYQXWNi7D8jnxiw7xTUfyL4XJpaFhFw4]`
+- `ValidationRegistry`: `[TK8HBbZykb1BSSrEsyVbMD98ngr2STTReW]`
 
 ## Requirements
 

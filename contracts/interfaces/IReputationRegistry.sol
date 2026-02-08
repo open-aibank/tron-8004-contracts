@@ -3,12 +3,14 @@ pragma solidity 0.8.25;
 
 /**
  * @title IReputationRegistry
- * @dev Interface for ERC-8004 v1.0 Reputation Registry
- * @notice On-chain feedback system with cryptographic authorization
+ * @dev Interface for ERC-8004 Reputation Registry (Jan 2026 Update)
+ * @notice On-chain feedback system - NO PRE-AUTHORIZATION REQUIRED
  * 
  * This interface provides a standard for posting and fetching feedback signals
- * with on-chain storage and aggregation capabilities. It uses cryptographic
- * signatures (EIP-191/ERC-1271) to authorize feedback submissions.
+ * with on-chain storage and aggregation capabilities. In the Jan 2026 update,
+ * the feedbackAuth mechanism has been removed - any client can directly submit
+ * feedback. Spam and Sybil resistance is handled through off-chain filtering
+ * and reputation systems.
  * 
  * @author ChaosChain Labs
  */
@@ -56,6 +58,7 @@ interface IReputationRegistry {
     
     /**
      * @notice Give feedback for an agent
+     * @dev No pre-authorization required in v2.0 - direct submission
      * @param agentId The agent receiving feedback
      * @param score The feedback score (0-100)
      * @param tag1 First tag for categorization (optional)
@@ -103,8 +106,8 @@ interface IReputationRegistry {
      * @notice Get aggregated summary for an agent
      * @param agentId The agent ID (mandatory)
      * @param clientAddresses Filter by specific clients (optional)
-     * @param tag1 Filter by tag1 (optional)
-     * @param tag2 Filter by tag2 (optional)
+     * @param tag1 Filter by tag1 (optional, use empty string to skip)
+     * @param tag2 Filter by tag2 (optional, use empty string to skip)
      * @return count Number of feedback entries
      * @return averageScore Average score (0-100)
      */
@@ -143,7 +146,7 @@ interface IReputationRegistry {
      * @param tag1 Filter by tag1 (optional)
      * @param tag2 Filter by tag2 (optional)
      * @param includeRevoked Whether to include revoked feedback
-     * @return clientAddresses_ Array of client addresses
+     * @return clientAddresses Array of client addresses
      * @return feedbackIndexes Array of feedback indexes
      * @return scores Array of scores
      * @return tag1s Array of tag1 values
@@ -157,7 +160,7 @@ interface IReputationRegistry {
         string calldata tag2,
         bool includeRevoked
     ) external view returns (
-        address[] memory clientAddresses_,
+        address[] memory,
         uint64[] memory feedbackIndexes,
         uint8[] memory scores,
         string[] memory tag1s,

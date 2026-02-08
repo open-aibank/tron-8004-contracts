@@ -8,7 +8,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   await deploy('ValidationRegistry', {
     from: deployer,
-    args: ['0x41a88ee10ce6c0167a5f51fe34c317475215e890f0'], // '0xDE94085699A500B696530DBD6AF1EDDD6EDD41E4'
+    args: ['0x2D0D118204A19a9B14a2052F1a33Bef5C908Cd3'], // '0xDE94085699A500B696530DBD6AF1EDDD6EDD41E4'
     log: true,
   });
 };

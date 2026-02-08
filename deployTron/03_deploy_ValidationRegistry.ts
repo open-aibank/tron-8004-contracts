@@ -6,11 +6,11 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  await deploy('ReputationRegistry', {
+  await deploy('ValidationRegistry', {
     from: deployer,
     args: [''], // '0xDE94085699A500B696530DBD6AF1EDDD6EDD41E4'
     log: true,
   });
 };
 export default func;
-func.tags = ['ReputationRegistry'];
+func.tags = ['ValidationRegistry'];

@@ -30,9 +30,21 @@ const config: HardhatUserConfig = {
   // settings for different networks
   networks: {
     tron: {
-      url: process.env.TRON_RPC_URL || 'https://nile.trongrid.io/jsonrpc', // tron rpc url
+      url: process.env.TRON_RPC_URL || 'https://api.trongrid.io/jsonrpc', // tron rpc url
       tron: true, // enable tron network
-      deploy: ['deploy/'], // folder for tron deploy scripts
+      deploy: ['deployTron/'], // folder for tron deploy scripts
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [], // account private key for deploy
+    },
+    nile: {
+      url: process.env.TRON_RPC_URL || 'https://nile.trongrid.io/jsonrpc', // nile rpc url
+      tron: true, // enable nile network
+      deploy: ['deploy/'], // folder for nile deploy scripts
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [], // account private key for deploy
+    },
+    shasta: {
+      url: process.env.TRON_RPC_URL || 'https://api.shasta.trongrid.io/jsonrpc', // shasta rpc url
+      tron: true, // enable shasta network
+      deploy: ['deploy/'], // folder for shasta deploy scripts
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [], // account private key for deploy
     },
   },

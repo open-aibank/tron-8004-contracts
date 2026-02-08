@@ -36,21 +36,21 @@ The project consists of three main registry contracts:
 
 ## Deployed Addresses (TRON Mainnet)
 
-- `IdentityRegistry`: `[]`
-- `ReputationRegistry`: `[]`
-- `ValidationRegistry`: `[]`
+- IdentityRegistry : [TFLvivMdKsk6v2GrwyD2apEr9dU1w7p7Fy](https://tronscan.org/#/contract/TFLvivMdKsk6v2GrwyD2apEr9dU1w7p7Fy/code)
+- ReputationRegistry : [TFbvfLDa4eFqNR5vy24nTrhgZ74HmQ6yat](https://tronscan.org/#/contract/TFbvfLDa4eFqNR5vy24nTrhgZ74HmQ6yat/code)
+- ValidationRegistry : [TLCWcW8Qmo7QMNoAKfBhGYfGpHkw1krUEm](https://tronscan.org/#/contract/TLCWcW8Qmo7QMNoAKfBhGYfGpHkw1krUEm/code)
 
 ## Deployed Addresses (Nile Testnet)
 
-- `IdentityRegistry`: `[TRLTghbBbxEmB2BojVfk5EugUrTARSkeU4]`
-- `ReputationRegistry`: `[TPXCSyfNi5G2UTQMXdr8PTWS2RXp3tPbU7]`
-- `ValidationRegistry`: `[TTtRQ7csbUaWbFaJim5Lxp4RkkWiaj2dE3]`
+- IdentityRegistry : [TDDk4vc69nzBCbsY4kfu7gw2jmvbinirj5](https://nile.tronscan.org/#/contract/TDDk4vc69nzBCbsY4kfu7gw2jmvbinirj5/code)
+- ReputationRegistry : [TBVaGd6mBuGuN5ebcvPvRaJo4rtEWqsW6Y](https://nile.tronscan.org/#/contract/TBVaGd6mBuGuN5ebcvPvRaJo4rtEWqsW6Y/code)
+- ValidationRegistry : [TGGkHDHhBzhFcLNcEogAWJkvfFYy4jyrSw](https://nile.tronscan.org/#/contract/TGGkHDHhBzhFcLNcEogAWJkvfFYy4jyrSw/code)
 
 ## Deployed Addresses (Shasta Testnet)
 
-- `IdentityRegistry`: `[TE5R4hVouK9DB8xDQRh2WzfCQHrwaK7iM2]`
-- `ReputationRegistry`: `[TDAYQXWNi7D8jnxiw7xTUfyL4XJpaFhFw4]`
-- `ValidationRegistry`: `[TK8HBbZykb1BSSrEsyVbMD98ngr2STTReW]`
+- IdentityRegistry : [TH775ZzfJ5V25EZkFuX6SkbAP53ykXTcma](https://shasta.tronscan.io/#/contract/TH775ZzfJ5V25EZkFuX6SkbAP53ykXTcma/code)
+- ReputationRegistry : [TTkds2ZZKBTChZHho4wcWAa7eWQTxh5TUT](https://shasta.tronscan.io/#/contract/TTkds2ZZKBTChZHho4wcWAa7eWQTxh5TUT/code)
+- ValidationRegistry : [TQBFHtKRiaQjc1xp4LtmmXKYdA7JLN89w3](https://shasta.tronscan.io/#/contract/TQBFHtKRiaQjc1xp4LtmmXKYdA7JLN89w3/code)
 
 ## Requirements
 

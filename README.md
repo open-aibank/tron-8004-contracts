@@ -1,6 +1,6 @@
 # trc-8004-contracts
 
-Smart contracts for **ERC-8004** (Trustless Agent) support on the **TRON** network.
+Smart contracts for **TRC-8004** (Trustless Agent) support on the **TRON** network.
 
 ## What is TRC-8004?
 

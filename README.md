@@ -103,7 +103,7 @@ npm run deploy
 
 ## Security
 
-The `IdentityRegistry` uses **TIP-712** and **TRC-1271** for secure wallet verification. Agent wallets are automatically reset upon NFT transfer to ensure security of the new owner.
+The `IdentityRegistry` uses **TIP-712** for secure wallet verification. Agent wallets are automatically reset upon NFT transfer to ensure security of the new owner.
 
 *Note: These contracts are reference implementations and should undergo a professional audit before mainnet deployment.*
 

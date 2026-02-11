@@ -1,10 +1,10 @@
-# tron-8004-contracts
+# trc-8004-contracts
 
 Smart contracts for **ERC-8004** (Trustless Agent) support on the **TRON** network.
 
-## What is ERC-8004?
+## What is TRC-8004?
 
-[ERC-8004](https://www.erc8004.org/) is an open, neutral standard for trustless AI agent identity, reputation, and validation. It provides a standardized way for agents to be registered as unique identities (NFTs) and builds a decentralized trust layer around them.
+TRC-8004 is an open, neutral standard for trustless AI agent identity, reputation, and validation. It provides a standardized way for agents to be registered as unique identities (NFTs) and builds a decentralized trust layer around them.
 
 - **Identity First**: Agents are represented as ERC-721 tokens, making them ownable, transferable, and easily discoverable.
 - **On-Chain Reputation**: A transparent feedback system for agents to build verifiable track records.

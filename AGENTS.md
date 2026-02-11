@@ -13,7 +13,7 @@ TRC-8004 (Jan 2026 Update) is a standard for decentralized agent governance on T
 
 ## Core Architecture
 The system logic is split across three essential registries:
-1.  **IdentityRegistry**: Agents are **ERC-721** tokens. Manages `agentWallet` which resets to `address(0)` on transfer.
+1.  **IdentityRegistry**: Agents are **TRC-721** tokens. Manages `agentWallet` which resets to `address(0)` on transfer.
 2.  **ValidationRegistry**: Facilitates score-based verification (0-100) of agent work by independent validators.
 3.  **ReputationRegistry**: Public feedback system (no authorization required) for recording performance signals.
 
